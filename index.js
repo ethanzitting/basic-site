@@ -7,9 +7,7 @@ var fs = require('fs');
 http.createServer(function (req, res) {
 	// Parses requested url
 	var q = url.parse(req.url, true);
-	console.log(q.pathname);
 	filename = "." + q.pathname;
-	console.log(filename);
   
 	// Load the appropriate webpage
 	if (filename == "./") {
