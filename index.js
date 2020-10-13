@@ -14,7 +14,6 @@ http.createServer(function (req, res) {
 		// Load Home
 		fs.readFile("index.html", function(err, data) {
 			res.writeHead(200, {'Content-Type': 'text/html'});
-			console.log(typeof(data));
 			res.write(data);
 			return res.end();
 		});
